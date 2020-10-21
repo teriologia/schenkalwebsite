@@ -1,65 +1,35 @@
-import Head from 'next/head'
+import react from 'react'
 import styles from '../styles/Home.module.css'
+import schenkal from '../public/schenkal.jpg'
 
 export default function Home() {
+  
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className={styles.blur}>
+      <div className={styles.sad} style={{position: 'absolute', bottom: 5, width: 300, left:0, right:0, marginLeft: 'auto', marginRight: 'auto'}}> CREATED BY TERIOLOGIA</div>
+        <div className={styles.headline}><span>BÜYÜK ÇEKİLİŞ </span> <span className={styles.date}> 21.10.2020</span></div>
+        <div className={styles.midLine}>1 değil 2 değil<span className={styles.underline}> TAM 4X FALL GUYS </span></div>
+        <div className={styles.fillLine}> <div className={styles.first}></div> <div className={styles.second}></div> <div className={styles.third}><span className={styles.nani}>NANİ???</span></div></div>
+        <div className={styles.fillLine}> <div className={styles.first}><span className={styles.nani}>NE YOKSA SEN HALA ÇEKİLİŞE KATILMADIN MI?</span></div> <div className={styles.second}></div> <div className={styles.third}></div></div>
+        <div className={styles.fillLine}> <div className={styles.first}></div> <div className={styles.second} style={{flexDirection: 'column'}}><span className={`${styles.nani} ${styles.sub}`}>O ZAMAN ÇABUK ŞUNA TIKLA!!! ABONELERE 2X ŞANS</span> <div className={styles.twitch}><div className={styles.twitchIcon} onClick={() =>  window.open("https://www.twitch.tv/schenkal", "_blank")}>SCHENKAL TWİTCH</div></div></div> <div className={styles.third}></div></div>
+        <div style={{paddingTop: 40, paddingLeft: 20, display: 'flex'}}>
+          <div style={{flexDirection: 'column', marginRight: 20}}>
+            <div className={styles.schenkalSay}>SCHENKAL DİYOR Kİ:</div>
+            <img src={schenkal} />
+          </div>
+          <div style={{flexGrow: 1, paddingTop: 70}}>
+            <div className={styles.fillLine}> <div className={styles.first}><span className={`${styles.nani} ${styles.cm}`}>BENİM Kİ TAM 70CM</span></div> <div className={styles.second}></div> <div className={styles.third}></div></div>
+            <div className={styles.fillLine}> <div className={styles.first}></div> <div className={styles.second}><span className={styles.nani}>HERKES 30CM VERDİ AMA...</span></div> <div className={styles.third}></div></div>
+            <div className={styles.fillLine}> <div className={styles.first}></div> <div className={styles.second}></div> <div className={styles.third} style={{flexGrow: 5}}><span className={styles.nani}>BENDEN SİZE TAM 70CM ZURNA DÜRÜM</span></div></div>
+            <div className={styles.fillLine}> <div className={styles.first}></div> <div className={styles.second}></div> <div className={styles.third} style={{flexGrow: 3}}><span className={styles.nani}>NE FALL GUYS'IN ZAATEN VAR MI???</span></div></div>
+            <div className={styles.fillLine}> <div className={styles.first}></div> <div className={styles.second}></div> <div className={styles.third} style={{flexGrow: 2}}><span className={styles.nani} style={{fontSize: 32}}>SORUN DEĞİL!!!!!</span></div></div>
+            <div className={styles.fillLine}> <div className={styles.first}></div> <div className={styles.second}></div> <div className={styles.third} style={{flexGrow: 1}}><span className={styles.nani}>SCHENKAL DA ÇÖZÜMLER ASLA TÜKEMEZ</span></div></div>
+            <div className={styles.fillLine}> <div className={styles.first}></div> <div className={styles.second}></div> <div className={styles.third} style={{flexGrow: 0.5}}><span className={styles.nani}>40TL DEĞERİNDE BİR HEDİYE SEÇ</span></div></div>
+            <div className={`${styles.fillLine} ${styles.sad}`} style={{justifyContent: 'center', alignItems: 'center'}}>40TRY: 5,09$ - 4,30€ </div>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      </div>
     </div>
   )
 }
