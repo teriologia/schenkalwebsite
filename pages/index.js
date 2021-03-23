@@ -14,7 +14,7 @@ export default function Home() {
         <span>bknz: götten giriş yasası 25. madde D. fıkrası</span>
         <div style={{display:'flex', justifyContent: 'space-around', width: '100%', height: '100%', alignItems: 'flex-end'}}>
           <div onClick={() => setIsYes(1)} className={styles.button} style={{backgroundColor: '#00FF00'}}>Kabul Et</div>
-          <div onClick={() => setIsYes(2)} className={styles.button}>Reddet</div>
+          <div onClick={() => setIsYes(2)} className={styles.button}>Reddet!</div>
         </div>
       </div>
     </div>
