@@ -16,6 +16,7 @@ const accept = (dd) => {
 export default function Home() {
   const [isyes, setIsYes] = useState(0)
   const [insans, setinsans] = useState([])
+//fortest
   useEffect(() => {
     console.log(isyes)
   })
