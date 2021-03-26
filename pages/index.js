@@ -1,7 +1,7 @@
 import react, { useState, useEffect } from 'react'
 import styles from '../styles/Home.module.css'
 import schenkal from '../public/schenkal.jpg'
-
+//asdsadasd
 const accept = (dd) => {
   if(dd == 2){
     return(
